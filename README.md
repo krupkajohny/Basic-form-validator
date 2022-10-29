@@ -15,12 +15,11 @@
 - using css type selector (button[type='submit'])
 
 ## JavaScript - exercising:
+Exercising mainly DOM manipulation and basic program logic.
 
-- basic dom manipulation:
-  -- adding/removing classes
-  -- using .closest method
+- adding/removing classes
+- using .closest method
 - using Regex with .match method
-- exercising basic program logic:
-  -- if else statements
-  -- ternary operators
-  -- function executing action + returning true/false for the future utilization
+- if else statements
+- ternary operators
+- function executing action + returning true/false for the future utilization
