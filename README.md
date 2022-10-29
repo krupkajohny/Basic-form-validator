@@ -1,6 +1,6 @@
 # BASIC FORM VALIDATOR
 
-# LIVE VERSION: https://krupkajohny.github.io/basic-form-validator/
+# LIVE VERSION: https://krupkajohny.github.io/Basic-form-validator/
 
 ## HTML - exercising:
 
