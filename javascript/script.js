@@ -57,11 +57,13 @@ const lengthCheck = (passInput, minLength, maxLength) => {
   // // (?=.*[A-Z])       //should contain at least one upper case
   // // [a-zA-Z0-9]{3,}   //should contain at least 4 from the mentioned characters
 
-  if (passInput.value.length < minLength) {
-    showErrorMsg(passInput, `${getFieldName(passInput)} must be at lest ${minLength} characters`);
-  } else if (passInput.value.length > maxLength) {
-    showErrorMsg(passInput, `${getFieldName(passInput)} must be max ${maxLength} characters`);
-  } else {
+  if (passInput.value.length < minLength || passInput.value.length > maxLength) {
+    showErrorMsg(passInput, `${getFieldName(passInput)} must be between ${minLength} and ${maxLength} characters`);
+  }
+  // else if () {
+  //   showErrorMsg(passInput, `${getFieldName(passInput)} must be max ${maxLength} characters`);
+  // }
+  else {
     showSuccessMsg(passInput);
     return true;
   }
@@ -96,7 +98,6 @@ form.addEventListener('submit', function (e) {
   let validPass = false;
   if (requiredInputsFilled[getFieldName(passwordInputElement)]) validPass = lengthCheck(passwordInputElement, 3, 10);
 
-  // if (requiredInputsFilled[getFieldName(passwordConfirmInputEl)]) validPassCheck(passwordInputElement, 3, 10);
   if (requiredInputsFilled[getFieldName(passwordConfirmInputEl)]) {
     if (validPass) {
       passMatChecker(passwordInputElement, passwordConfirmInputEl);

@@ -183,10 +183,6 @@ FORM STYLES
   color: var(--secondary);
   box-shadow: 0 0 0 1px var(--secondary) inset;
   /* border: 2px solid #3498db; */
-
-  /* --secondary: #2276dd;
-  --secondary-light: #91b2da;
-  --secondary-contrast: #fff; */
 }
 
 /* 
